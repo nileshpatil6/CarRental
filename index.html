@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Car Rentals - Premium Vehicle Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">EXECUTIVE</span>
+                <span class="logo-subtitle">CAR RENTALS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#fleet" class="nav-link nav-dropdown-toggle">
+                        Fleet <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="#" data-filter="luxury" class="dropdown-link">Executive</a></li>
+                        <li><a href="#" data-filter="sports" class="dropdown-link">Performance</a></li>
+                        <li><a href="#" data-filter="suv" class="dropdown-link">SUV</a></li>
+                        <li><a href="#" data-filter="electric" class="dropdown-link">Electric</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="tel:+15551234567" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 80809 96838</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-slideshow">
+            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1600&q=80" alt="Luxury Car" class="hero-slide active">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=1600&q=80" alt="Sports Car" class="hero-slide">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1600&q=80" alt="SUV" class="hero-slide">
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element" data-speed="0.5"></div>
+            <div class="floating-element" data-speed="0.3"></div>
+            <div class="floating-element" data-speed="0.7"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-label animated">PREMIUM CAR RENTALS</span>
+                <h1 class="hero-title animated">Drive the <span class="hero-rotating">Extraordinary</span></h1>
+                <p class="hero-subtitle animated">Experience our curated collection of the world's finest automobiles. From business executives to special occasions, we provide unparalleled luxury and service.</p>
+                <div class="hero-buttons animated">
+                    <a href="#fleet" class="btn btn-primary">View Collection</a>
+                    <a href="tel:+15551234567" class="btn btn-secondary">Reserve Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats parallax-section">
+        <div class="stats-bg-pattern"></div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-on-scroll" data-delay="0">
+                    <div class="stat-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Premium Vehicles</div>
+                </div>
+                <div class="stat-item reveal-on-scroll" data-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-item reveal-on-scroll" data-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Concierge Service</div>
+                </div>
+                <div class="stat-item reveal-on-scroll" data-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase">
+        <div class="video-container">
+            <div class="video-background-image"></div>
+            <video autoplay muted loop playsinline class="background-video" poster="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-sports-car-on-a-highway-44045-large.mp4" type="video/mp4">
+                <!-- Fallback for browsers that don't support video -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <h2 class="video-title reveal-on-scroll">Experience Luxury in Motion</h2>
+                <p class="video-subtitle reveal-on-scroll" data-delay="200">Every journey becomes an unforgettable experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="fleet-bg-image parallax-bg" data-speed="0.5"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">OUR FLEET</span>
+                <h2 class="section-title">Exceptional Vehicles</h2>
+                <p class="section-subtitle">Each vehicle in our collection is meticulously maintained and represents the pinnacle of automotive excellence</p>
+            </div>
+            
+            <!-- Search and Filter Section -->
+            <div class="search-filter-section">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="carSearch" placeholder="Search by car name, brand, or feature..." class="search-input">
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-car"></i>
+                        <span>All Vehicles</span>
+                        <span class="filter-count">30</span>
+                    </button>
+                    <button class="filter-btn" data-filter="luxury">
+                        <i class="fas fa-gem"></i>
+                        <span>Executive</span>
+                        <span class="filter-count">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="sports">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Performance</span>
+                        <span class="filter-count">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="suv">
+                        <i class="fas fa-truck"></i>
+                        <span>SUV</span>
+                        <span class="filter-count">0</span>
+                    </button>
+                    <button class="filter-btn" data-filter="electric">
+                        <i class="fas fa-bolt"></i>
+                        <span>Electric</span>
+                        <span class="filter-count">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cars Grid -->
+            <div class="cars-grid" id="carsGrid">
+                <!-- Cars will be dynamically inserted here -->
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-car-side"></i>
+                <h3>No vehicles found</h3>
+                <p>Try adjusting your search or filters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-bg-pattern"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label reveal-on-scroll">ABOUT US</span>
+                    <h2 class="reveal-on-scroll" data-delay="100">Redefining Luxury Car Rentals</h2>
+                    <p class="reveal-on-scroll" data-delay="200">For over 15 years, Executive Car Rentals has been the preferred choice for discerning clients who demand excellence. Our commitment to providing an unparalleled rental experience sets us apart.</p>
+                    <p class="reveal-on-scroll" data-delay="300">From Fortune 500 executives to special occasions, we understand that our clients expect nothing but the best. That's why every vehicle in our fleet is hand-selected and maintained to the highest standards.</p>
+                    <div class="about-features">
+                        <div class="about-feature reveal-on-scroll" data-delay="400">
+                            <i class="fas fa-check"></i>
+                            <span>White-glove delivery service</span>
+                        </div>
+                        <div class="about-feature reveal-on-scroll" data-delay="500">
+                            <i class="fas fa-check"></i>
+                            <span>Comprehensive insurance coverage</span>
+                        </div>
+                        <div class="about-feature reveal-on-scroll" data-delay="600">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 concierge support</span>
+                        </div>
+                        <div class="about-feature reveal-on-scroll" data-delay="700">
+                            <i class="fas fa-check"></i>
+                            <span>Airport meet & greet</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&q=80" alt="Luxury Service" class="parallax-img" data-speed="0.8">
+                    <div class="about-image-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Watch Our Story</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Services Section -->
+    <section class="premium-services">
+        <div class="services-bg-image"></div>
+        <div class="services-overlay"></div>
+        <div class="container">
+            <div class="services-content">
+                <h2 class="services-title reveal-on-scroll">Premium Services</h2>
+                <div class="services-grid">
+                    <div class="service-card reveal-on-scroll" data-delay="0">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Personal Chauffeur</h3>
+                        <p>Professional drivers available 24/7</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Airport Transfer</h3>
+                        <p>Seamless pickup and drop-off service</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3>Custom Routes</h3>
+                        <p>Personalized itineraries for your journey</p>
+                    </div>
+                    <div class="service-card reveal-on-scroll" data-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Full Insurance</h3>
+                        <p>Complete peace of mind coverage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-bg-pattern"></div>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Experience the difference of true luxury car rental service</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 80809 96838</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservations@executivecarrentals.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>550 Madison Avenue, New York, NY 10022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Reserve Your Vehicle</h3>
+                    <p>Our team is available 24/7 to assist with your reservation</p>
+                    <a href="tel:+15551234567" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>EXECUTIVE CAR RENTALS</h3>
+                    <p>Setting the standard for luxury vehicle rentals since 2009</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#fleet">Our Fleet</a></li>
+                            <li><a href="#">Corporate Accounts</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Long Term Leasing</a></li>
+                            <li><a href="#">Corporate Rentals</a></li>
+                            <li><a href="#">Event Transportation</a></li>
+                            <li><a href="#">Chauffeur Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <p>550 Madison Avenue<br>New York, NY 10022</p>
+                        <p class="footer-phone">+91 80809 96838</p>
+                        <p>Mon-Sun: 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Executive Car Rentals. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
