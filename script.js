@@ -814,12 +814,12 @@ function closeModalWithAnimation() {
 
 // Call now function
 function callNow() {
-    window.location.href = 'tel:+918080996838';
+    window.location.href = 'tel:+918623077121';
 }
 
 // Book on WhatsApp function
 function bookOnWhatsapp() {
-    window.open('https://wa.me/918080996838', '_blank');
+    window.open('https://wa.me/918623077121', '_blank');
 }
 
 // Scroll to fleet
